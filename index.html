@@ -28,6 +28,10 @@
         background: #101827;
       }
 
+      nav { position: fixed; top: 1.5rem; right: clamp(1.25rem, 5vw, 4rem); z-index: 2; display: flex; gap: .45rem; }
+      nav a { padding: .55rem .85rem; border: 1px solid rgba(255,255,255,.13); border-radius: 999px; color: var(--ink); background: rgba(16,24,39,.36); text-decoration: none; font-size: .9rem; font-weight: 700; backdrop-filter: blur(12px); }
+      nav a:hover, nav a[aria-current="page"] { color: #06121d; background: var(--blue); }
+
       .orb {
         position: fixed;
         border-radius: 50%;
@@ -105,6 +109,11 @@
     </style>
   </head>
   <body>
+    <nav aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="orb orb--one"></div>
     <div class="orb orb--two"></div>
     <div class="orb orb--three"></div>
@@ -112,7 +121,7 @@
       <div class="eyebrow"><span class="dot"></span> A fresh start</div>
       <h1>Hi My name is Sandeep</h1>
       <p>A small page with a little bit of sparkle—ready for whatever you build next.</p>
-      <a class="button" href="#hello" id="hello">Let’s create ✦</a>
+      <a class="button" href="about.html">Meet Sandeep ✦</a>
     </main>
   </body>
 </html>
